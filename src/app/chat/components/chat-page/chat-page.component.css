@@ -1,0 +1,176 @@
+.main {
+  margin-left: 25%;
+  font-size: 28px;
+  height: 100%;
+  background-color: rgb(10, 10, 10);
+}
+
+.content{
+  /* background-color: url("/assets/kartik.jpg"); */
+ 
+  height: 80%;
+  background-size: cover;
+background-position: center;
+position: relative;
+overflow-y: auto;
+/* display: flex;
+flex-direction: column-reverse; */
+padding: 10px;
+ 
+}::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+.self,.friend{
+ color: aquamarine;
+}
+.chatIcon{
+vertical-align: middle;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+.friend{
+    width: 100%;
+}
+.img_cont_msg{
+height: 40px;
+width: 40px;
+margin-left: 40px;
+}
+.img_cont_send_msg{
+height: 40px;
+width: 40px;
+margin-right: 40px;
+}
+.user_img_msg{
+height: 40px;
+width: 40px;
+border:1.5px solid #f5f6fa;
+
+}
+.msg_cotainer{
+
+margin-left: 10px;
+background-color: #33b5b7;
+border-radius: 20px 20px 20px 0;
+}
+.msg_cotainer_send{
+
+margin-right: 10px;
+padding: 4%;
+background-color: #bbf3c7; 
+border-radius: 20px 20px 0 20px;
+}
+.msg_cotainer_send,.msg_cotainer{
+margin-top: auto;
+margin-bottom: auto;
+font-size: 20px;
+font-style: oblique;
+font-family: serif;
+padding: 4px;
+position: relative;
+overflow: hidden;
+}
+.msg_time{
+position: absolute;
+left: 0;
+bottom: -15px;
+color: rgba(255,255,255,0.5);
+font-size: 10px;
+}
+.msg_time_send{
+position: absolute;
+right:0;
+bottom: -15px;
+color: rgba(255,255,255,0.5);
+font-size: 10px;
+}
+.footer
+{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: transparent;
+color: cadetblue;
+text-align: center;
+margin-left: 25%;
+padding-left: 1%;
+padding-top: 2%;
+min-height: 10%;
+
+}
+
+
+.type_msg{
+background-color: rgba(93, 119, 123, 0.3) !important;
+ color: rgb(201, 202, 212) !important;
+height: 45px !important;
+overflow-y: auto;
+background-color: rgba(93, 119, 123, 0) !important;
+border: 0 0 1px 0 !important;
+height: 45px !important;
+overflow-y: auto;
+border-bottom: 1px solid #5f9ea0;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+}
+.type_msg:focus{
+ box-shadow:none !important;
+outline:0px !important;
+}
+.dp{
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  }
+.requestContainer{
+  height: 100%;
+  align-content: center;
+  }
+ .card{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 32%;
+    background-color: rgba(61, 78, 93,0.5) !important;
+    height: 30%;
+   }
+   .reqst_btn{
+    color: black;
+    background-color: #95c8c9;
+    width: 100px;
+    cursor: pointer;
+    }
+    
+    .reqst_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    .sendBtn{
+      border-radius: 50%;
+      background-color: #5f9ea0;
+      color: black;
+      width: 40px;
+      height: 40px;
+      padding: 2px 1px 1px 5px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      cursor: pointer;
+  
+    }
+    .msgDiv{
+      display: flex;
+      width: 65vw;
+    }
+    .attach_btn{
+      font-size: 3vw;
+      cursor: pointer;
+    }
+  .msg_img{
+    height: 160px;
+    width: 200px;
+    border-radius: 20px;
+  }

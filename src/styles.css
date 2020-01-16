@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* .modal-content{
+    background-color: cyan;
+} */
+.my_new_modal .modal-content{
+    background-color:  rgb(183, 219, 232);
+}

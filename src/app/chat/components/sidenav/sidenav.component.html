@@ -1,0 +1,33 @@
+<div class="sidenav">
+    <div>
+      <div class="profile">
+              <div class="pImg">
+                  <img [src]="pSrc" class=" static_img">
+              </div>
+              <p class="pName">{{myUser.displayName}}</p>
+              <!-- <div  >
+                 
+              </div>
+              <div style="clear: float;">
+
+              </div> -->
+      </div>
+      <div class="search-div">
+          <div class="form-inline">
+            <button class="btn" type="button" (click)="searchFriend()"><i class="material-icons">search</i></button>
+              <input class="form-control search_input mr-sm-2" type="text" autocomplete="off" placeholder="Search your friend....."  [(ngModel)]="searchUsers">
+              
+          </div>
+    </div>
+         <app-recent-chat [users]="searchedUsers" (userEvent)="rcvSelectedUser($event)"
+         
+         [searchUsers]="searchUsers"></app-recent-chat>   
+    </div>
+    <div class="footer">
+        <div class="row btns">
+          <div class="col activity" (click)="signOut()"> <button class="btn act" type="button"><i class="material-icons"> power_settings_new </i>Logout</button></div>
+          <!-- <div class="col activity"><button class="btn act" type="button"><i class="material-icons"> notification_important </i> Notifications</button></div> -->
+          <!-- <div class="col activity"> <button class="btn act" type="button" ><i class="material-icons"> settings_applications </i>Settings</button></div> -->
+        </div>
+        </div>
+  </div>

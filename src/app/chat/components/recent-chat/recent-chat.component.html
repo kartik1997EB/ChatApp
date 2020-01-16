@@ -1,0 +1,12 @@
+<div class="recent_chat"> 
+    <div class="chats" *ngFor="let user of users | searchFilter : 'displayName' : searchUsers ;"  [ngClass]="{'active':selectedId === user.uid}" 
+    (click)="selectUser(user)">
+        <div  style="float: left;width: 20%;">
+            <img [src]="user.photoURL" alt="Avatar" class="avatar dp">
+        </div>
+        <div style="float: left;margin-top: 5%;width: 80%;">
+            <p >{{user.displayName}}</p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>

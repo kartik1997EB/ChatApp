@@ -1,0 +1,80 @@
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.form-inline {
+  margin-left: 10px;
+  width: 100%;
+}
+.navbar{
+  background-color: #000202;
+  min-height: 10%;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.dp{
+vertical-align: middle;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.chartyName{
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  margin-left: 1%;
+}
+i{
+  cursor: pointer;
+}
+.wish_font{
+  font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: #dfe9ec;
+    margin-left: 8%;
+}
+.wish_icon{
+  font-size: 35px;color: #b7dbe8;
+}
+.type_wish{
+  /* background-color: rgba(93, 119, 123, 0.3) !important;  */
+  color: rgb(27, 27, 29) !important;
+  background-color: rgba(93, 119, 123, 0) !important;
+  border: 0 0 1px 0 !important;
+  /* height: 45px !important; */
+  /* overflow-y: auto; */
+  border-bottom: 1px solid #5f9ea0;
+  /* border-top: 0; */
+  /* border-right: 0; */
+  /* border-left: 0; */
+  width: 100%;
+  font-size: 20px;
+  font-family: monospace;
+  }
+  .hello{
+    background-color: rgb(183, 219, 232);
+  }
+  .wish_input,.wish_date_time{
+    width: 100%;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: rgba(93, 119, 123, 0) !important;
+  }
+ .wish_date{
+    width: 65%;
+    background-color: rgba(93, 119, 123, 0) !important;
+  }
+  .wish_time{
+    width: 35%;
+    background-color: rgba(93, 119, 123, 0) !important;
+  }
+  .date_label{
+    margin: 15px;
+    font-size: x-large;
+    font-family: serif;
+  }
+.custom-class{
+background-color: teal;
+}
+

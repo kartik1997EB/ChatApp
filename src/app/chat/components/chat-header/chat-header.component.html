@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-sm" ><!--*ngIf="selectedName"-->
+    <!-- *ngIf="selectedUser" -->
+    <a href="javascript:void(0)"> 
+        <img [src]="selectedUser.photoURL" class="dp"  *ngIf="selectedUser" >
+      </a>
+    <span class="chartyName" *ngIf="selectedUser">{{selectedUser.displayName}}</span>
+    
+        <!-- <i class="material-icons" style="font-size:35px;margin-left: 3%;" *ngIf="selectedUser">photo_library</i>-->      
+        <ul class="navbar-nav ml-auto" style="display: block;line-height: 0.5rem;">
+          <i class="material-icons wish_icon"  (click)="openModal()" *ngIf="selectedUser">card_giftcard</i> 
+          <span class="wish_font" *ngIf="selectedUser">Wish</span>
+      </ul>
+        
+</nav>
+<modal #myWishModal class="my_new_modal">
+  <modal-header>
+      <h3 *ngIf="selectedUser">Set your wish for {{selectedUser.displayName}}</h3>
+  </modal-header>
+  <modal-content>
+     <div class="row">
+       <div class="wish_input">
+         <input type="text" class="type_wish" placeholder="Type your wish"  [(ngModel)]="inputWish">
+       </div>
+       <span class="date_label">Set Date & time for your wish</span>
+       <div class="wish_date_time">
+         <input type="date" class="wish_date"  required [(ngModel)]="inputDate"/><input type="time" class="wish_time" value="20:20" required [(ngModel)]="inputTime">
+       </div>
+     </div>
+     <span style="font-size: 10px;color: red;">{{errorWarn}}</span>
+  </modal-content>
+  <modal-footer>
+    <button class="btn btn-success" (click)="getData()" style="margin-right: 2px;">Set</button>
+      <button class="btn btn-danger" (click)="closeModal()">cancel</button>
+  </modal-footer>
+  <!--CHANGES MADE-->
+</modal>
